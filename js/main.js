@@ -1,6 +1,6 @@
 $(document).ready(function(){
   function init_map() {
-    var var_location = new google.maps.LatLng(45.430817,12.331516);
+    var var_location = new google.maps.LatLng(51.488352, -0.165316);
 
     var var_mapoptions = {
       center: var_location,

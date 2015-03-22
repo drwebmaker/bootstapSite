@@ -4,16 +4,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap 101 Template</title>
+  <title>Bootstrap Site</title>
 
-  <!-- Bootstrap -->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
-
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -24,11 +18,301 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-<h1>Привет, мир!</h1>
+<header>
+  <div class="navbar navbar-fixed-top header" role="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="logo col-lg-3 col-sm-3">
+          <a href="#">
+            <img src="images/logo.png" alt=""/>
+          </a>
+        </div>
+        <div class="header-menu col-lg-7 col-sm-7">
+          <ul class="nav navbar-nav">
+            <li class="active header-menu__item"><a href="#">About Us</a></li>
+            <li class="header-menu__item"><a href="#about">Services</a></li>
+            <li class="header-menu__item"><a href="#contact">News</a></li>
+            <li  class="header-menu__item"><a href="#contact">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<div class="main">
+  <section class="slider">
+    <div id="Carousel" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/slider-img.png" class="img-responsive">
+          <div class="centroid">
+            <div class="slider-text centroid-object">
+              The best <span class="slider-text--alt">solutions</span> starts here!
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/slider-img.png" class="img-responsive">
+        </div>
+        <div class="item">
+          <img src="images/slider-img.png" class="img-responsive">
+        </div>
+      </div>
+
+      <a class="left carousel-control" href="#Carousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#Carousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+  </section>
+  <section class="content-section">
+    <div class="container">
+      <h1 class="content-section__title">
+        About <span class="cs-title-alt">Company</span>
+      </h1>
+      <div class="">
+        <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium. Suspendisse auctor quam cursus mauris sollicitudin imperdiet. Aliquam ullamcorper lorem purus, ac dictum velit fermentum ac. Proin eu dui nec quam pulvinar lacinia vulputate at sem. Integer a est lectus. Curabitur ut lectus vel eros accumsan accumsan. Aliquam erat volutpat. Phasellus molestie arcu sit amet lectus tempor, ut blandit orci interdum. Pellentesque sollicitudin metus sem, et auctor nunc pellentesque aliquam.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section content-section--alt">
+    <div class="container">
+      <h1 class="content-section__title">
+        Our <span class="cs-title-alt">Services</span>
+      </h1>
+      <div class="l-block-large">
+        <p>Donec faucibus hendrerit libero nec varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra lorem mi, in tincidunt neque volutpat id. </p>
+      </div>
+      <div class="services">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="services__item">
+              <div class="">
+                <figure><i class="fa fa-users services-icon"></i></figure>
+                <div class="caption">
+                  <h2>Some Service</h2>
+                  <div class="block">
+                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="services__item">
+              <div class="">
+                <figure><i class="fa fa-weixin services-icon"></i></figure>
+                <div class="caption">
+                  <h2>Some Service</h2>
+                  <div class="block">
+                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="services__item">
+              <div class="">
+                <figure><i class="fa fa-trophy services-icon"></i></figure>
+                <div class="caption">
+                  <h2>Some Service</h2>
+                  <div class="block">
+                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="services__item">
+              <div class="">
+                <figure><i class="fa fa-star services-icon"></i></figure>
+                <div class="caption">
+                  <h2>Some Service</h2>
+                  <div class="block">
+                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="services__item">
+              <div class="">
+                <figure><i class="fa fa-plane services-icon"></i></figure>
+                <div class="caption">
+                  <h2>Some Service</h2>
+                  <div class="block">
+                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="services__item">
+              <div class="">
+                <figure><i class="fa fa-graduation-cap services-icon"></i></figure>
+                <div class="caption">
+                  <h2>Some Service</h2>
+                  <div class="block">
+                    <p>Sed orci nibh, rhoncus ut tellus quis, sodales ornare arcu. Pellentesque rutrum tellus ut mauris scelerisque hendrerit. Pellentesque laoreet dapibus justo in pretium.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <h1 class="content-section__title">
+        Blog & <span class="cs-title-alt">News</span>
+      </h1>
+      <div class="l-block-large">
+        <p>Donec faucibus hendrerit libero nec varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra lorem mi, in tincidunt neque volutpat id.</p>
+      </div>
+      <div class="blog">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="blog__item blog__item-big">
+              <div class="blog-img" style="background-image: url('images/url.jpg')"></div>
+              <div class="blog-date">June 15, 2014</div>
+              <div class="blog-description">
+                <h2>Featured News</h2>
+                <div class="blog-description-text">
+                  <p>Proin posuere non est at ornare. Duis aliquam sapien urna, consectetur scelerisque ipsum malesuada in. Fusce venenatis justo vel est posuere fermentum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="blog__item">
+                  <div class="blog-img" style="background-image: url('images/url1.jpg')"></div>
+                  <div class="blog-date">June 15, 2014</div>
+                  <div class="blog-description">
+                    <h3>Some News Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="blog__item">
+                  <div class="blog-img" style="background-image: url('images/8a829__Cocktail-Garden-designrulz-2.jpg')"></div>
+                  <div class="blog-date">June 15, 2014</div>
+                  <div class="blog-description">
+                    <h3>Some News Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="blog__item">
+                  <div class="blog-img" style="background-image: url('images/5.jpg')"></div>
+                  <div class="blog-date">June 15, 2014</div>
+                  <div class="blog-description">
+                    <h3>Some News Title</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-6">
+                <div class="blog__item">
+                  <div class="blog-img" style="background-image: url('images/Color-Pencils.jpg')"></div>
+                  <div class="blog-date">June 15, 2014</div>
+                  <div class="blog-description">
+                    <h3>Some News Title</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section content-section--alt contact-section-bg">
+    <div class="container">
+      <h1 class="content-section__title">
+        Contact <span class="cs-title-alt">Us</span>
+      </h1>
+      <div class="l-block-large">
+        <p>Donec faucibus hendrerit libero nec varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin viverra lorem mi, in tincidunt neque volutpat id. </p>
+      </div>
+      <div class="contact">
+        <div class="row">
+          <div class="col-md-7">
+            <div id="map-container"></div>
+          </div>
+          <div class="col-md-5">
+            <div class="contact-name">Company name</div>
+            <div class="contact-info">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="contact-address">
+                    13 Radnor Walk<br/>
+                    London<br/>
+                    SW3 4BP
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="contact-date">
+                    +44(0) 207 581 8313<br/>
+                    +44(0) 207 681 8314<br/>
+                    <a href="mailto:enquiries@kasimira.com">enquiries@kasimira.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 footer-menu">
+        <div class="list-inline">
+          <div class="list-inline__item"><a href="#"><img src="images/logo-footer.png" alt="Company name"/></a></div>
+          <div class="list-inline__item footer-menu__item">
+            <a class="link" href="#">Terms</a>
+          </div>
+          <div class="list-inline__item footer-menu__item">
+            <a class="link" href="#">Privacy</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 text-center">
+        <div class="sn">
+          <div class="sn-item"><img src="images/facebook.png" alt=""/></div>
+          <div class="sn-item"><img src="images/twitter.png" alt=""/></div>
+          <div class="sn-item"><img src="images/youtube.png" alt=""/></div>
+          <div class="sn-item"><img src="images/instagram.png" alt=""/></div>
+          <div class="sn-item"><img src="images/pinterest.png" alt=""/></div>
+        </div>
+      </div>
+      <div class="col-sm-4 text-right">Copyright © 2013 <a href="#" class="link">Company Name</a>. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

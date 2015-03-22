@@ -1,0 +1,34 @@
+.footer {
+  padding: 44px 0;
+  background-color: #000000;
+  border-top: 6px solid #00aba9;
+  color: #ffffff;
+  font-size: 14px;
+}
+.footer-menu {
+  line-height: 21px;
+}
+.footer-menu__item:before {
+  content: "|";
+  padding-right: 12px;
+}
+
+.footer-menu__item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-menu__item a:hover {
+  color: #008287;
+  text-decoration: none;
+}
+.sn {
+  margin: 0;
+  padding: 0;
+  margin-left: -5px;
+  vertical-align: top;
+}
+.sn-item {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: top;
+}

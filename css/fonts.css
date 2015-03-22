@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Advent Pro ExtraLight";
+  src: url('../fonts/Advent_Pro/AdventPro-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: "Advent Pro Light";
+  src: url('../fonts/Advent_Pro/AdventPro-Light.ttf');
+}
+
+@font-face {
+  font-family: "Advent Pro Medium";
+  src: url('../fonts/Advent_Pro/AdventPro-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Advent Pro";
+  src: url('../fonts/Advent_Pro/AdventPro-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Advent Pro SemiBold";
+  src: url('../fonts/Advent_Pro/AdventPro-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "Advent Pro Thin";
+  src: url('../fonts/Advent_Pro/AdventPro-Thin.ttf');
+}
+
+@font-face {
+  font-family: "Advent Pro Bold";
+  src: url('../fonts/Advent_Pro/AdventPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url('../fonts/Open_Sans/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: "Open Sans Bold Italic";
+  src: url('../fonts/Open_Sans/OpenSans-BoldItalic.ttf');
+}
+@font-face {
+  font-family: "Open Sans Extra Bold";
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBold.ttf');
+}
+@font-face {
+  font-family: "Open Sans Extra Bold Italic";
+  src: url('../fonts/Open_Sans/OpenSans-ExtraBoldItalic.ttf');
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url('../fonts/Open_Sans/OpenSans-Italic.ttf');
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url('../fonts/Open_Sans/OpenSans-Light.ttf');
+}
+@font-face {
+  font-family: "Open Sans Light Italic";
+  src: url('../fonts/Open_Sans/OpenSans-LightItalic.ttf');
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url('../fonts/Open_Sans/OpenSans-Semibold.ttf');
+}
+@font-face {
+  font-family: "Open Sans Semibold Italic";
+  src: url('../fonts/Open_Sans/OpenSans-SemiboldItalic.ttf');
+}
+@font-face {
+  font-family: "Font Awesome";
+  src: url('../fonts/FontAwesome.otf');
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.svg');
+  src: url('../fonts/fontawesome-webfont.ttf');
+  src: url('../fonts/fontawesome-webfont.woff');
+  src: url('../fonts/fontawesome-webfont.woff2');
+}

@@ -1,0 +1,32 @@
+.content-section {
+  padding: 72px 0;
+  text-align: center;
+}
+
+.content-section__title {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e9e9e9;
+  font-family: "Advent Pro Bold";
+  color: #010101;
+  text-transform: uppercase;
+}
+.cs-title-alt {
+  font-family: "Advent Pro Medium";
+  color: #008287;
+}
+
+.content-section--alt {
+  background-color: #008287;
+  color: #FFF;
+}
+.content-section--alt .cs-title-alt {
+  color: #FFF;
+}
+
+.contact-section-bg {
+  background-image: url('../images/contact-section-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

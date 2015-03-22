@@ -1,0 +1,108 @@
+@import url("fonts.css");
+@import url("header.css");
+@import url("slider.css");
+@import url("content-section.css");
+@import url("services.css");
+@import url("blog.css");
+@import url("footer.css");
+
+body {
+  font-family: "Open Sans";
+  font-size: 20px;
+  color: #555555;
+  padding-top: 80px;
+}
+.centroid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.centroid:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -.35em;
+}
+.centroid .centroid-object {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 95%;
+}
+
+h1,h2,h3,h4 {
+  font-family: "Advent Pro Bold";
+  text-transform: uppercase;
+  color: #010101;
+}
+
+h1 {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 18px;
+}
+
+.l-block {
+  margin-bottom: 24px;
+}
+.l-block-large {
+  margin-bottom: 48px;
+}
+
+#map-container {
+  height: 208px
+}
+
+.contact {
+  text-align: left;
+}
+
+.contact-name {
+  font-size: 24px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.contact-info {
+  font-size: 16px;
+  line-height: 24px;
+}
+.contact-date {
+  text-align: right;
+}
+.contact-date a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.contact-date a:hover {
+  text-decoration: none;
+}
+
+.link {
+   color: #008287;
+}
+.link:hover {
+  color: #008287;
+}
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+  margin-left: -12px;
+  list-style: none;
+  vertical-align: middle;
+}
+.list-inline__item {
+  display: inline-block;
+  margin-left: 12px;
+  vertical-align: middle;
+}

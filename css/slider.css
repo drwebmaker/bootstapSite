@@ -1,0 +1,47 @@
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-height: 600px;
+
+  border-top: 6px solid #00aba9;
+  border-bottom: 6px solid #00aba9;
+}
+
+.slider-text {
+  font-family: "Advent Pro Medium";
+  font-size: 72px;
+  color: #00aba9;
+  text-transform: uppercase;
+}
+
+.slider-text--alt {
+  font-family: "Advent Pro Bold";
+  color: #ffffff;
+  background-color: #00aba9;
+  padding: 0 20px;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-control {
+  z-index: 2;
+}

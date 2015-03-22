@@ -1,0 +1,74 @@
+.header {
+  height: 80px;
+  background-color: #000;
+}
+
+.logo {
+  height: 80px;
+  background-color: #008287;
+  min-width: 266px;
+}
+
+.logo:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: -100%;
+  position: absolute;
+  background: #008287;
+}
+
+.logo:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: -80px;
+  position: absolute;
+  border-bottom: 80px solid #008287;
+  border-right: 80px solid transparent;
+}
+
+.logo a {
+  height: 80px;
+  display: block;
+  line-height: 80px;
+}
+
+.header-menu {
+  display: inline-block;
+  text-align: center;
+  float: right;
+}
+
+.header-menu .nav {
+  float: right;
+}
+
+.header-menu__item {
+
+}
+
+.header-menu__item a {
+  font-family: "Advent Pro Bold";
+  text-transform: uppercase;
+  color: #e5e5e5;
+  font-size: 24px;
+}
+
+.navbar-nav>li>a {
+  line-height: 80px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.header-menu__item a:hover {
+  color: #008287;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: transparent;
+}

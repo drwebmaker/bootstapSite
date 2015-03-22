@@ -1,0 +1,35 @@
+.services {
+  //
+}
+.services__item {
+  margin-bottom: 36px;
+  text-align: left;
+}
+.services__item h2 {
+  margin: 0;
+}
+.services__item p {
+  font-size: 16px;
+  line-height: 20px;
+}
+.services__item figure {
+  margin: 0 10px 0 0;
+  padding: 0;
+  float: left;
+  position: relative;
+}
+.services__item .caption {
+  margin: 0;
+  overflow: hidden;
+  max-height: 94px;
+}
+
+.services-icon {
+  font-size: 48px;
+  padding: 12px;
+  margin-top: 6px;
+  background-image: url("../images/services-icon-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

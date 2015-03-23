@@ -13,6 +13,13 @@
   font-size: 72px;
   color: #00aba9;
   text-transform: uppercase;
+  max-width: 80% !important;
+}
+
+@media (max-width: 992px) {
+  .slider-text {
+    font-size: 52px;
+  }
 }
 
 .slider-text--alt {
@@ -20,6 +27,14 @@
   color: #ffffff;
   background-color: #00aba9;
   padding: 0 20px;
+}
+
+.mobile-slider {
+  min-height: 300px;
+  background-image: url("../images/slider-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .carousel-fade .carousel-inner .item {
@@ -32,16 +47,41 @@
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
+.carousel-fade .carousel-inner .active.slider-left,
+.carousel-fade .carousel-inner .active.slider-right {
   left: 0;
   opacity: 0;
   z-index: 1;
 }
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
+.carousel-fade .carousel-inner .next.slider-left,
+.carousel-fade .carousel-inner .prev.slider-right {
   opacity: 1;
+}
+.slider-right {
+  right: 0;
+  left: auto;
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+.carousel-control {
+  opacity: 1;
+}
+.slider-left-icon, .slider-right-icon {
+  position: absolute;
+  font-size: 45px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: #00aba9;
+  top: 50%;
+  margin-top: -20px;
+  color: #fff;
+}
+
+.slider-left-icon {
+  left: 10px;
+}
+.slider-right-icon {
+  right: 10px;
 }

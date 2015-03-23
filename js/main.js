@@ -20,4 +20,19 @@ $(document).ready(function(){
   }
 
   google.maps.event.addDomListener(window, 'load', init_map);
+
+
+
+
+
+$(".scrollTo").on("click","a", function (event) {
+  event.preventDefault();
+
+  var id  = $(this).attr('href'),
+
+    top = $(id).offset().top;
+
+  $('body,html').animate({scrollTop: top}, 1000);
+});
+
 });

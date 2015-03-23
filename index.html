@@ -17,23 +17,41 @@
   <![endif]-->
   <link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+<body id="top">
+
 <header>
   <div class="navbar navbar-fixed-top header" role="navigation">
     <div class="container">
       <div class="row">
-        <div class="logo col-lg-3 col-sm-3">
+        <div class="logo col-lg-3 col-sm-3 col-xs-5">
           <a href="#">
             <img src="images/logo.png" alt=""/>
           </a>
         </div>
-        <div class="header-menu col-lg-7 col-sm-7">
-          <ul class="nav navbar-nav">
-            <li class="active header-menu__item"><a href="#">About Us</a></li>
-            <li class="header-menu__item"><a href="#about">Services</a></li>
-            <li class="header-menu__item"><a href="#contact">News</a></li>
+        <div class="header-menu col-lg-7 col-sm-7 hidden-xs navbar-right">
+          <ul class="nav navbar-nav scrollTo" id="menu">
+            <li class="active header-menu__item"><a href="#about">About Us</a></li>
+            <li class="header-menu__item"><a href="#servises">Services</a></li>
+            <li class="header-menu__item"><a href="#news">News</a></li>
             <li  class="header-menu__item"><a href="#contact">Contacts</a></li>
           </ul>
+        </div>
+        <div class="col-xs-3 visible-xs mobile-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="collapse navbar-collapse mobile-header-menu" id="navbar-collapse-1">
+            <ul class="nav navbar-nav text-right scrollTo" id="menu1">
+              <li class="active header-menu__item"><a href="#about">About Us</a></li>
+              <li class="header-menu__item"><a href="#servises">Services</a></li>
+              <li class="header-menu__item"><a href="#news">News</a></li>
+              <li  class="header-menu__item"><a href="#contact">Contacts</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +60,7 @@
 
 <div class="main">
   <section class="slider">
-    <div id="Carousel" class="carousel slide carousel-fade">
+    <div id="Carousel" class="carousel slide carousel-fade hidden-xs">
       <div class="carousel-inner">
         <div class="item active">
           <img src="images/slider-img.png" class="img-responsive">
@@ -60,15 +78,22 @@
         </div>
       </div>
 
-      <a class="left carousel-control" href="#Carousel" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
+      <a class="slider-left carousel-control" href="#Carousel" data-slide="prev">
+        <i class="fa fa-angle-left slider-left-icon"></i>
       </a>
-      <a class="right carousel-control" href="#Carousel" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
+      <a class="slider-right carousel-control" href="#Carousel" data-slide="next">
+        <i class="fa fa-angle-right slider-right-icon"></i>
       </a>
     </div>
+    <div class="visible-xs mobile-slider">
+      <div class="centroid">
+        <div class="slider-text centroid-object">
+          The best <span class="slider-text--alt">solutions</span> starts here!
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="content-section">
+  <section class="content-section" id="about">
     <div class="container">
       <h1 class="content-section__title">
         About <span class="cs-title-alt">Company</span>
@@ -79,7 +104,7 @@
     </div>
   </section>
 
-  <section class="content-section content-section--alt">
+  <section class="content-section content-section--alt" id="servises">
     <div class="container">
       <h1 class="content-section__title">
         Our <span class="cs-title-alt">Services</span>
@@ -172,7 +197,7 @@
     </div>
   </section>
 
-  <section class="content-section">
+  <section class="content-section" id="news">
     <div class="container">
       <h1 class="content-section__title">
         Blog & <span class="cs-title-alt">News</span>
@@ -239,7 +264,7 @@
     </div>
   </section>
 
-  <section class="content-section content-section--alt contact-section-bg">
+  <section class="content-section content-section--alt contact-section-bg" id="contact">
     <div class="container">
       <h1 class="content-section__title">
         Contact <span class="cs-title-alt">Us</span>
@@ -249,7 +274,7 @@
       </div>
       <div class="contact">
         <div class="row">
-          <div class="col-md-7">
+          <div class="col-md-7 l-block">
             <div id="map-container"></div>
           </div>
           <div class="col-md-5">
@@ -305,6 +330,11 @@
       </div>
       <div class="col-sm-4 text-right">Copyright © 2013 <a href="#" class="link">Company Name</a>. All rights reserved.</div>
     </div>
+  </div>
+
+  <div class="scroll-top scrollTo">
+    <a href="#top"><i class="fa fa-angle-up scroll-top-icon"></i></a>
+
   </div>
 </footer>
 
